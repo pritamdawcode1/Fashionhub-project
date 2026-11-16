@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collections | FashionHub</title>
+    <meta name="description" content="Browse and filter FashionHub's curated clothing, footwear, and accessories for Men, Women, and Kids.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="catalog">
+
+    <div id="sharedHeaderMount"></div>
+
+    <main id="appMain">
+        <div class="container catalog-page">
+            <!-- Breadcrumb & Header -->
+            <div class="catalog-top-bar">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span id="catalogBreadcrumb">All Products</span>
+                </nav>
+                <div class="catalog-header-row">
+                    <div>
+                        <h1 class="catalog-title" id="catalogPageTitle">All Fashion Collections</h1>
+                        <p class="catalog-subtitle"><span id="catalogResultCount">0</span> products found</p>
+                    </div>
+
+                    <div class="catalog-controls">
+                        <button class="btn btn-outline btn-sm mobile-filter-btn" id="openMobileFilterBtn">
+                            <i class="fa-solid fa-sliders"></i> Filters
+                        </button>
+
+                        <div class="sort-control">
+                            <label for="sortSelect">Sort by:</label>
+                            <select id="sortSelect" aria-label="Sort products">
+                                <option value="recommended">Recommended</option>
+                                <option value="popularity">Popularity</option>
+                                <option value="price-asc">Price: Low to High</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="rating">Customer Rating</option>
+                                <option value="newest">Newest First</option>
+                                <option value="discount">Discount: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Filter Chips Bar -->
+                <div class="active-filters-bar hidden" id="activeFiltersBar">
+                    <div class="active-chips" id="activeFilterChips"></div>
+                    <button class="clear-all-link" id="clearAllFiltersBtn">Clear All Filters</button>
+                </div>
+            </div>
+
+            <!-- Two-Column Layout: Filter Sidebar + Product Grid -->
+            <div class="catalog-layout">
+                <div class="filter-backdrop hidden" id="filterBackdrop"></div>
+                <aside class="filter-sidebar" id="filterSidebar" aria-label="Product Filters">
+                    <div class="filter-sidebar-header">
+                        <h3><i class="fa-solid fa-filter"></i> FILTERS</h3>
+                        <button class="btn-link" id="sidebarClearBtn">Reset</button>
+                        <button class="icon-btn close-filter-mobile" id="closeMobileFilterBtn" aria-label="Close filters"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="filter-groups-scroll">
+                        <!-- 1. CATEGORY -->
+                        <div class="filter-group">
+                            <h4>Category</h4>
+                            <div class="filter-options" id="filterCategoryList">
+                                <label class="checkbox-label"><input type="checkbox" name="category" value="Men"> Men</label>
+                                <label class="checkbox-label"><input type="checkbox" name="category" value="Women"> Women</label>
+                                <label class="checkbox-label"><input type="checkbox" name="category" value="Kids"> Kids</label>
+                                <label class="checkbox-label"><input type="checkbox" name="category" value="Accessories"> Accessories</label>
+                            </div>
+                        </div>
+
+                        <!-- 2. PRICE RANGE + SLIDER -->
+                        <div class="filter-group">
+                            <h4>Price Range</h4>
+                            <div class="filter-options" id="filterPricePresets">
+                                <label class="radio-label"><input type="radio" name="pricePreset" value="all" checked> All Prices</label>
+                                <label class="radio-label"><input type="radio" name="pricePreset" value="0-499"> Under ₹499</label>
+                                <label class="radio-label"><input type="radio" name="pricePreset" value="500-999"> ₹500 – ₹999</label>
+                                <label class="radio-label"><input type="radio" name="pricePreset" value="1000-1999"> ₹1,000 – ₹1,999</label>
+                                <label class="radio-label"><input type="radio" name="pricePreset" value="2000-4999"> ₹2,000 – ₹4,999</label>
+                                <label class="radio-label"><input type="radio" name="pricePreset" value="5000-99999"> ₹5,000+</label>
+                            </div>
+                            <div class="price-slider-box">
+                                <div class="price-slider-values">
+                                    <span>Max Price:</span>
+                                    <strong id="maxPriceLabel">₹7,000</strong>
+                                </div>
+                                <input type="range" id="priceRangeSlider" min="300" max="7000" step="100" value="7000" aria-label="Maximum price slider">
+                            </div>
+                        </div>
+
+                        <!-- 3. BRAND -->
+                        <div class="filter-group">
+                            <h4>Brand</h4>
+                            <div class="filter-options" id="filterBrandList">
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="FashionHub"> FashionHub</label>
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="Roadster"> Roadster</label>
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="Puma"> Puma</label>
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="Adidas"> Adidas</label>
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="Nike"> Nike</label>
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="Levi's"> Levi's</label>
+                                <label class="checkbox-label"><input type="checkbox" name="brand" value="H&M"> H&M</label>
+                            </div>
+                        </div>
+
+                        <!-- 4. CUSTOMER RATINGS -->
+                        <div class="filter-group">
+                            <h4>Customer Ratings</h4>
+                            <div class="filter-options">
+                                <label class="radio-label"><input type="radio" name="rating" value="0" checked> All Ratings</label>
+                                <label class="radio-label"><input type="radio" name="rating" value="4"> 4★ & above</label>
+                                <label class="radio-label"><input type="radio" name="rating" value="3"> 3★ & above</label>
+                                <label class="radio-label"><input type="radio" name="rating" value="2"> 2★ & above</label>
+                            </div>
+                        </div>
+
+                        <!-- 5. DISCOUNT -->
+                        <div class="filter-group">
+                            <h4>Discount</h4>
+                            <div class="filter-options">
+                                <label class="radio-label"><input type="radio" name="discount" value="0" checked> Any Discount</label>
+                                <label class="radio-label"><input type="radio" name="discount" value="10"> 10% or more</label>
+                                <label class="radio-label"><input type="radio" name="discount" value="20"> 20% or more</label>
+                                <label class="radio-label"><input type="radio" name="discount" value="30"> 30% or more</label>
+                                <label class="radio-label"><input type="radio" name="discount" value="50"> 50% or more</label>
+                            </div>
+                        </div>
+
+                        <!-- 6. SIZE -->
+                        <div class="filter-group">
+                            <h4>Size</h4>
+                            <div class="size-filter-grid" id="filterSizeList">
+                                <button type="button" class="size-chip" data-size="XS">XS</button>
+                                <button type="button" class="size-chip" data-size="S">S</button>
+                                <button type="button" class="size-chip" data-size="M">M</button>
+                                <button type="button" class="size-chip" data-size="L">L</button>
+                                <button type="button" class="size-chip" data-size="XL">XL</button>
+                                <button type="button" class="size-chip" data-size="XXL">XXL</button>
+                            </div>
+                        </div>
+
+                        <!-- 7. COLOR -->
+                        <div class="filter-group">
+                            <h4>Color</h4>
+                            <div class="color-filter-grid" id="filterColorList">
+                                <button type="button" class="color-chip" data-color="Black"><span class="swatch" style="background:#171717"></span> Black</button>
+                                <button type="button" class="color-chip" data-color="White"><span class="swatch" style="background:#FFFFFF;border:1px solid #ccc"></span> White</button>
+                                <button type="button" class="color-chip" data-color="Blue"><span class="swatch" style="background:#2563EB"></span> Blue</button>
+                                <button type="button" class="color-chip" data-color="Red"><span class="swatch" style="background:#DC2626"></span> Red</button>
+                                <button type="button" class="color-chip" data-color="Green"><span class="swatch" style="background:#16A34A"></span> Green</button>
+                                <button type="button" class="color-chip" data-color="Grey"><span class="swatch" style="background:#6B7280"></span> Grey</button>
+                            </div>
+                        </div>
+
+                        <!-- 8. AVAILABILITY -->
+                        <div class="filter-group">
+                            <h4>Availability</h4>
+                            <div class="filter-options">
+                                <label class="radio-label"><input type="radio" name="stock" value="all" checked> All Items</label>
+                                <label class="radio-label"><input type="radio" name="stock" value="in_stock"> In Stock Only</label>
+                                <label class="radio-label"><input type="radio" name="stock" value="out_of_stock"> Out of Stock</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-mobile-footer">
+                        <button class="btn btn-primary btn-full" id="applyMobileFiltersBtn">Apply Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Product Results Grid -->
+                <section class="catalog-results-area" aria-label="Filtered Products">
+                    <div class="product-grid" id="catalogProductGrid"></div>
+                    <div class="no-results-box hidden" id="noResultsBox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h3>No matching products found</h3>
+                        <p>Try adjusting your search keywords or clearing active filters to discover more styles.</p>
+                        <button class="btn btn-primary" id="noResultsResetBtn">Reset All Filters</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div id="sharedFooterMount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

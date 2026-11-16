@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | FashionHub</title>
+    <meta name="description" content="Complete your FashionHub order securely with address validation and instant order confirmation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="checkout">
+
+    <div id="sharedHeaderMount"></div>
+
+    <main id="appMain">
+        <div class="container checkout-page">
+            <div class="checkout-header">
+                <h1>Secure Checkout</h1>
+                <div class="checkout-stepper" id="checkoutStepper">
+                    <div class="step active" data-step="1"><span>1</span> Contact & Address</div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="2"><span>2</span> Order Review</div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="3"><span>3</span> Payment</div>
+                </div>
+            </div>
+
+            <div class="checkout-layout" id="checkoutMainLayout">
+                <form class="checkout-form-col" id="checkoutForm" novalidate>
+                    <!-- STEP 1: CUSTOMER INFORMATION -->
+                    <div class="checkout-card">
+                        <div class="card-step-title">
+                            <span class="step-badge">STEP 1</span>
+                            <h3>Customer Information</h3>
+                        </div>
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="chkFullName">Full Name *</label>
+                                <input type="text" id="chkFullName" placeholder="e.g. Aarav Sharma" required>
+                                <small class="field-error" id="errFullName"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="chkMobile">Mobile Number (10 digits) *</label>
+                                <input type="tel" id="chkMobile" placeholder="e.g. 9876543210" maxlength="10" required>
+                                <small class="field-error" id="errMobile"></small>
+                            </div>
+                            <div class="form-group span-2">
+                                <label for="chkEmail">Email Address *</label>
+                                <input type="email" id="chkEmail" placeholder="e.g. aarav@example.com" required>
+                                <small class="field-error" id="errEmail"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: DELIVERY ADDRESS -->
+                    <div class="checkout-card">
+                        <div class="card-step-title">
+                            <span class="step-badge">STEP 2</span>
+                            <h3>Delivery Address</h3>
+                        </div>
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="chkHouse">House / Flat Number *</label>
+                                <input type="text" id="chkHouse" placeholder="e.g. Flat 402, Emerald Towers" required>
+                                <small class="field-error" id="errHouse"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="chkStreet">Street / Locality *</label>
+                                <input type="text" id="chkStreet" placeholder="e.g. Park Street, Sector 18" required>
+                                <small class="field-error" id="errStreet"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="chkLandmark">Landmark (Optional)</label>
+                                <input type="text" id="chkLandmark" placeholder="e.g. Near Metro Station">
+                            </div>
+                            <div class="form-group">
+                                <label for="chkPin">PIN Code (6 digits) *</label>
+                                <input type="text" id="chkPin" placeholder="e.g. 742101" maxlength="6" required>
+                                <small class="field-error" id="errPin"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="chkCity">City *</label>
+                                <input type="text" id="chkCity" placeholder="e.g. Kolkata" required>
+                                <small class="field-error" id="errCity"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="chkState">State *</label>
+                                <select id="chkState" required>
+                                    <option value="">Select State</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Kerala">Kerala</option>
+                                </select>
+                                <small class="field-error" id="errState"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: PAYMENT METHOD -->
+                    <div class="checkout-card">
+                        <div class="card-step-title">
+                            <span class="step-badge">STEP 4</span>
+                            <h3>Payment Method <span class="demo-pill">Demo UI</span></h3>
+                        </div>
+                        <p class="demo-disclaimer"><i class="fa-solid fa-circle-info"></i> Frontend Demonstration Mode: Do not enter real bank card numbers or live UPI PINs.</p>
+                        
+                        <div class="payment-options">
+                            <label class="payment-option-card selected">
+                                <input type="radio" name="paymentMethod" value="Cash on Delivery" checked>
+                                <div class="pay-opt-body">
+                                    <strong><i class="fa-solid fa-money-bill-wave"></i> Cash on Delivery (COD)</strong>
+                                    <span>Pay via cash or UPI at your doorstep upon delivery.</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-option-card">
+                                <input type="radio" name="paymentMethod" value="UPI (Demo)">
+                                <div class="pay-opt-body">
+                                    <strong><i class="fa-solid fa-mobile-screen-button"></i> UPI Instant Pay (Demo UI)</strong>
+                                    <span>Simulated GPay / PhonePe / Paytm confirmation.</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-option-card">
+                                <input type="radio" name="paymentMethod" value="Credit/Debit Card (Demo)">
+                                <div class="pay-opt-body">
+                                    <strong><i class="fa-regular fa-credit-card"></i> Debit / Credit Card (Demo UI)</strong>
+                                    <span>Simulated card gateway confirmation (no real data stored).</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="payment-demo-box hidden" id="paymentDemoDetails">
+                            <p id="paymentDemoText">Simulated gateway ready. Click Place Order to confirm demo payment.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-full" id="placeOrderBtn">
+                        PLACE ORDER & CONFIRM
+                    </button>
+                </form>
+
+                <!-- STEP 3: RIGHT COLUMN ORDER SUMMARY -->
+                <aside class="checkout-summary-col">
+                    <div class="checkout-card sticky-summary">
+                        <div class="card-step-title">
+                            <span class="step-badge">STEP 3</span>
+                            <h3>Order Summary</h3>
+                        </div>
+                        <div class="chk-items-list" id="checkoutItemsList"></div>
+                        <div class="summary-rows">
+                            <div class="summary-row"><span>Subtotal (MRP)</span><span id="chkSubMrp">₹0</span></div>
+                            <div class="summary-row discount-row"><span>Discount</span><span id="chkSubDiscount">- ₹0</span></div>
+                            <div class="summary-row"><span>Delivery Fee</span><span id="chkSubDelivery">₹0</span></div>
+                            <div class="summary-row"><span>Platform Fee</span><span id="chkSubPlatform">₹10</span></div>
+                            <div class="summary-row"><span>Tax (GST 5%)</span><span id="chkSubTax">₹0</span></div>
+                        </div>
+                        <div class="summary-total-row">
+                            <span>Final Payable</span>
+                            <strong id="chkFinalPayable">₹0</strong>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- STEP 5: ORDER CONFIRMATION VIEW -->
+            <div class="order-confirmation-box hidden" id="orderConfirmationBox"></div>
+        </div>
+    </main>
+
+    <div id="sharedFooterMount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

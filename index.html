@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub | Style That Defines You — Premium Fashion Store</title>
+    <meta name="description" content="Discover the latest fashion trends at FashionHub. Shop premium Men's, Women's, Kids' clothing, Footwear, and Accessories with fast delivery and easy returns.">
+    <meta name="keywords" content="FashionHub, online fashion store, men clothing, women dresses, kids wear, sneakers, accessories, Indian fashion e-commerce">
+    <meta name="author" content="FashionHub Retail Pvt. Ltd.">
+
+    <!-- Google Fonts: Inter, Poppins & DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "FashionHub",
+      "description": "Premium modern fashion e-commerce destination for Men, Women, Kids & Accessories.",
+      "priceRange": "₹399 - ₹6999"
+    }
+    </script>
+</head>
+<body data-page="home">
+
+    <!-- Shared Header & Mobile Drawer Container (Injected cleanly by script.js to avoid duplication) -->
+    <div id="sharedHeaderMount"></div>
+
+    <!-- MAIN HOMEPAGE CONTENT -->
+    <main id="appMain">
+        <!-- SECTION 1: HERO BANNER -->
+        <section class="hero-section" aria-label="Featured Campaign">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">AUTUMN / WINTER COLLECTION 2026</span>
+                    <h1 class="hero-title">STYLE THAT DEFINES YOU.</h1>
+                    <p class="hero-subtitle">Discover the latest fashion trends. Upgrade your wardrobe with FashionHub's curated essentials crafted for effortless everyday luxury.</p>
+                    <div class="hero-actions">
+                        <a href="catalog.html?category=Men" class="btn btn-primary btn-lg">SHOP MEN</a>
+                        <a href="catalog.html?category=Women" class="btn btn-outline btn-lg">SHOP WOMEN</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div><strong>30+</strong><span>Curated Styles</span></div>
+                        <div><strong>4.8★</strong><span>Customer Rated</span></div>
+                        <div><strong>24h</strong><span>Express Dispatch</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85" alt="FashionHub Editorial Model Showcase" loading="eager">
+                        <div class="hero-floating-card">
+                            <span class="badge-accent">FLAT 30% OFF</span>
+                            <p>Season Launch Offer</p>
+                            <small>Use code: <strong>STYLE30</strong> at checkout</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SHOP BY CATEGORY -->
+        <section class="section-block" aria-labelledby="catHeading">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-kicker">CURATED DEPARTMENTS</span>
+                        <h2 id="catHeading" class="section-title">Shop By Category</h2>
+                    </div>
+                    <a href="catalog.html" class="btn-link">View Full Catalog <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-grid">
+                    <a href="catalog.html?category=Men" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80" alt="Men's Fashion" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Men's Fashion</h3>
+                            <span class="explore-pill">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="catalog.html?category=Women" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Women's Fashion" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Women's Fashion</h3>
+                            <span class="explore-pill">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="catalog.html?category=Kids" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=600&q=80" alt="Kids' Fashion" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Kids' Fashion</h3>
+                            <span class="explore-pill">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="catalog.html?sub=Sneakers" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Footwear Collection" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Footwear</h3>
+                            <span class="explore-pill">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="catalog.html?category=Accessories" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Premium Accessories" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Accessories</h3>
+                            <span class="explore-pill">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="catalog.html?tag=new" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=600&q=80" alt="New Arrivals" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>New Arrivals</h3>
+                            <span class="explore-pill">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TRENDING PRODUCTS -->
+        <section class="section-block bg-subtle" aria-labelledby="trendingHeading">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-kicker">MOST COVETED RIGHT NOW</span>
+                        <h2 id="trendingHeading" class="section-title">Trending Products</h2>
+                    </div>
+                    <a href="catalog.html" class="btn btn-outline btn-sm">Shop All Trending</a>
+                </div>
+                <div class="product-grid" id="homeTrendingGrid"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: SPECIAL OFFERS BANNERS -->
+        <section class="section-block" aria-label="Special Promotional Offers">
+            <div class="container">
+                <div class="offers-grid">
+                    <div class="offer-banner offer-dark">
+                        <div class="offer-content">
+                            <span class="offer-tag">SEASON EXCLUSIVE</span>
+                            <h3>FLAT 30% OFF</h3>
+                            <p>On all premium Oversized Tees, Jackets & Denims.</p>
+                            <a href="catalog.html?tag=offers" class="btn btn-primary btn-sm">Grab Deal</a>
+                        </div>
+                        <i class="fa-solid fa-tags offer-bg-icon"></i>
+                    </div>
+
+                    <div class="offer-banner offer-warm">
+                        <div class="offer-content">
+                            <span class="offer-tag">BUNDLE & SAVE</span>
+                            <h3>BUY 2 GET 1</h3>
+                            <p>Mix & match Everyday Basics across Men & Women.</p>
+                            <a href="catalog.html" class="btn btn-dark btn-sm">Shop Bundle</a>
+                        </div>
+                        <i class="fa-solid fa-bag-shopping offer-bg-icon"></i>
+                    </div>
+
+                    <div class="offer-banner offer-light">
+                        <div class="offer-content">
+                            <span class="offer-tag">FLASH DROP</span>
+                            <h3>LIMITED TIME DEALS</h3>
+                            <p>Up to 50% off luxury watches, bags & footwear.</p>
+                            <a href="catalog.html?category=Accessories" class="btn btn-outline btn-sm">Explore Deals</a>
+                        </div>
+                        <i class="fa-solid fa-bolt offer-bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: NEW ARRIVALS -->
+        <section class="section-block" aria-labelledby="newArrivalsHeading">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-kicker">JUST LANDED</span>
+                        <h2 id="newArrivalsHeading" class="section-title">New Arrivals</h2>
+                    </div>
+                    <a href="catalog.html?tag=new" class="btn-link">Explore All New <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="product-grid" id="homeNewArrivalsGrid"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: BESTSELLERS -->
+        <section class="section-block bg-subtle" aria-labelledby="bestsellersHeading">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-kicker">TOP RATED BY SHOPPERS</span>
+                        <h2 id="bestsellersHeading" class="section-title">Bestsellers</h2>
+                    </div>
+                    <a href="catalog.html?tag=bestsellers" class="btn-link">View All Bestsellers <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="product-grid" id="homeBestsellersGrid"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: WHY FASHIONHUB? -->
+        <section class="section-block trust-section" aria-label="Why Choose FashionHub">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4>Premium Quality</h4>
+                        <p>100% authentic fabrics & strict quality checks.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                        <h4>Easy Returns</h4>
+                        <p>14-day hassle-free exchange & instant refunds.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>Secure Payments</h4>
+                        <p>256-bit encrypted checkout & COD available.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h4>Fast Delivery</h4>
+                        <p>Express doorstep delivery across 26,000+ PINs.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h4>Customer Support</h4>
+                        <p>Dedicated fashion stylists & 24/7 support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: NEWSLETTER -->
+        <section class="newsletter-section" aria-labelledby="newsletterHeading">
+            <div class="container newsletter-box">
+                <div class="newsletter-text">
+                    <span class="section-kicker">JOIN THE INNER CIRCLE</span>
+                    <h2 id="newsletterHeading">STAY IN STYLE</h2>
+                    <p>Subscribe to receive early access to limited drops, private sales, and ₹500 off your first order.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm" novalidate>
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                    </div>
+                    <p class="form-feedback" id="newsletterFeedback" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Footer, Modal & Toasts Container -->
+    <div id="sharedFooterMount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

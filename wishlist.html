@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist | FashionHub</title>
+    <meta name="description" content="View your saved fashion items and move them directly to your shopping bag.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="wishlist">
+
+    <div id="sharedHeaderMount"></div>
+
+    <main id="appMain">
+        <div class="container wishlist-page">
+            <div class="page-head-row">
+                <h1>My Wishlist <span class="muted-count" id="wishlistPageCount">(0 items)</span></h1>
+                <a href="catalog.html" class="btn-link">Explore More Styles →</a>
+            </div>
+            <div class="product-grid" id="wishlistGrid"></div>
+            <div class="empty-state-box hidden" id="emptyWishlistBox">
+                <i class="fa-regular fa-heart"></i>
+                <h3>Your wishlist is feeling light</h3>
+                <p>Save your favorite styles here to review sizes and shop later.</p>
+                <a href="catalog.html" class="btn btn-primary">Start Exploring</a>
+            </div>
+        </div>
+    </main>
+
+    <div id="sharedFooterMount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

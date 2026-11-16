@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag | FashionHub</title>
+    <meta name="description" content="Review your selected items, update sizes or quantities, and proceed to secure checkout at FashionHub.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+
+    <div id="sharedHeaderMount"></div>
+
+    <main id="appMain">
+        <div class="container cart-page">
+            <div class="page-head-row">
+                <h1>Shopping Bag <span class="muted-count" id="cartPageCount">(0 items)</span></h1>
+                <a href="catalog.html" class="btn-link"><i class="fa-solid fa-arrow-left"></i> Continue Shopping</a>
+            </div>
+
+            <div class="cart-layout" id="cartLayout">
+                <!-- Left: Cart Items -->
+                <div class="cart-items-col" id="cartItemsContainer"></div>
+
+                <!-- Right: Automatic Price Breakdown -->
+                <aside class="cart-summary-card" id="cartSummaryContainer">
+                    <h3>Price Details</h3>
+                    <div class="summary-rows">
+                        <div class="summary-row">
+                            <span>Total MRP (Subtotal)</span>
+                            <span id="summaryMrp">₹0</span>
+                        </div>
+                        <div class="summary-row discount-row">
+                            <span>Bag Discount</span>
+                            <span id="summaryDiscount">- ₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee</span>
+                            <span id="summaryDelivery">₹49</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Platform Fee</span>
+                            <span id="summaryPlatform">₹10</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Estimated GST (5%)</span>
+                            <span id="summaryTax">₹0</span>
+                        </div>
+                    </div>
+                    <div class="summary-total-row">
+                        <span>Final Total</span>
+                        <strong id="summaryFinalTotal">₹0</strong>
+                    </div>
+                    <p class="savings-callout" id="summarySavingsText">You save ₹0 on this order!</p>
+                    <a href="checkout.html" class="btn btn-primary btn-full btn-lg" id="proceedCheckoutBtn">PROCEED TO CHECKOUT</a>
+                    <div class="cart-trust-note">
+                        <i class="fa-solid fa-lock"></i> Safe & Secure Payments. 100% Authentic Products.
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <div id="sharedFooterMount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

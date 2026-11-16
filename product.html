@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | FashionHub</title>
+    <meta name="description" content="Explore detailed specifications, size options, fabric care, and reviews at FashionHub.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="product">
+
+    <div id="sharedHeaderMount"></div>
+
+    <main id="appMain">
+        <div class="container pdp-container" id="pdpContent">
+            <!-- Populated dynamically from ?id= query parameter -->
+        </div>
+
+        <!-- Related Recommendations Section -->
+        <section class="section-block bg-subtle" aria-labelledby="relatedHeading">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-kicker">COMPLETE THE LOOK</span>
+                        <h2 id="relatedHeading" class="section-title">You May Also Like</h2>
+                    </div>
+                    <a href="catalog.html" class="btn-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="product-grid" id="relatedProductsGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="sharedFooterMount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
