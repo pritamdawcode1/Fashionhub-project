@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub | Style That Defines You — Premium Fashion Store</title>
+    <meta name="description" content="Discover the latest fashion trends at FashionHub. Shop premium Men's, Women's, Kids' clothing, Footwear, and Accessories with fast delivery and easy returns.">
+    <meta name="keywords" content="FashionHub, online fashion store, men clothing, women dresses, kids wear, sneakers, accessories, Indian fashion e-commerce">
+    <meta name="author" content="FashionHub Retail Pvt. Ltd.">
+    <link rel="canonical" href="https://www.fashionhub-demo.example.com/">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FashionHub | Style That Defines You">
+    <meta property="og:description" content="Upgrade your wardrobe with curated luxury & everyday essentials at FashionHub.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://www.fashionhub-demo.example.com/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FashionHub | Premium Fashion Store">
+    <meta name="twitter:description" content="Shop curated collections for Men, Women & Kids.">
+
+    <!-- Google Fonts: Inter, Poppins & DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) for E-Commerce Store & Featured Catalog -->
+    <script type="application/ld+json" id="seo-json-ld">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "FashionHub",
+      "description": "Premium modern fashion e-commerce destination for Men, Women, Kids & Accessories.",
+      "url": "https://www.fashionhub-demo.example.com/",
+      "priceRange": "₹399 - ₹6999",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar" role="region" aria-label="Promotions">
+        <div class="container announcement-inner">
+            <span><i class="fa-solid fa-truck-fast"></i> FREE EXPRESS DELIVERY ON ORDERS ABOVE ₹999</span>
+            <span class="hide-mobile">|</span>
+            <span class="hide-mobile"><i class="fa-solid fa-rotate-left"></i> 14-DAY HASSLE-FREE RETURNS</span>
+        </div>
+    </div>
+
+    <!-- Sticky Main Header & Navigation -->
+    <header class="site-header" id="siteHeader">
+        <div class="container navbar">
+            <!-- Left: Mobile Hamburger + Brand Logo -->
+            <div class="nav-left">
+                <button class="icon-btn mobile-menu-trigger" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="#home" class="brand-logo" data-route="home" aria-label="FashionHub Home">
+                    <span class="logo-mark">FH</span>
+                    <span class="logo-text">FASHION<span class="accent-dot">HUB</span></span>
+                </a>
+            </div>
+
+            <!-- Center: Desktop Navigation with Mega Menu -->
+            <nav class="desktop-nav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active" data-route="home">Home</a></li>
+                    
+                    <!-- MEN Mega Menu -->
+                    <li class="nav-item has-mega">
+                        <a href="#catalog?category=Men" class="nav-link" data-filter-cat="Men">Men <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+                        <div class="mega-menu" role="menu">
+                            <div class="container mega-grid">
+                                <div class="mega-col">
+                                    <h4>Topwear</h4>
+                                    <ul>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Oversized T-Shirts">Oversized T-Shirts</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Polo T-Shirts">Polo T-Shirts</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Casual Shirts">Casual Shirts</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Formal Shirts">Formal Shirts</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Hoodies">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Jackets">Jackets & Outerwear</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Bottomwear & Footwear</h4>
+                                    <ul>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Denim Jeans">Denim Jeans</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Cargo Pants">Cargo Pants & Trousers</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Sneakers">Sneakers & Shoes</a></li>
+                                        <li><a href="#" data-mega-cat="Men" data-mega-sub="">All Men's Wear</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-promo">
+                                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=500&q=80" alt="Men's Urban Editorial Collection" loading="lazy">
+                                    <div class="mega-promo-caption">
+                                        <span class="badge-tag">NEW SEASON</span>
+                                        <h5>Urban Streetwear Edit</h5>
+                                        <button class="btn-link" data-filter-cat="Men">Explore Men →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- WOMEN Mega Menu -->
+                    <li class="nav-item has-mega">
+                        <a href="#catalog?category=Women" class="nav-link" data-filter-cat="Women">Women <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+                        <div class="mega-menu" role="menu">
+                            <div class="container mega-grid">
+                                <div class="mega-col">
+                                    <h4>Western & Fusion</h4>
+                                    <ul>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Tops">Tops & Blouses</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Dresses">Casual & Party Dresses</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Jeans">High-Rise Jeans</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Kurtis">Kurtis & Tunics</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Ethnic Wear">Ethnic Wear & Sets</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Bags & Footwear</h4>
+                                    <ul>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Handbags">Handbags & Totes</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Sneakers">Women's Sneakers</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Sandals">Heels & Sandals</a></li>
+                                        <li><a href="#" data-mega-cat="Women" data-mega-sub="">All Women's Wear</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-promo">
+                                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" alt="Women's Contemporary Style" loading="lazy">
+                                    <div class="mega-promo-caption">
+                                        <span class="badge-tag">CURATED</span>
+                                        <h5>Autumn / Winter '26</h5>
+                                        <button class="btn-link" data-filter-cat="Women">Explore Women →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- KIDS Mega Menu -->
+                    <li class="nav-item has-mega">
+                        <a href="#catalog?category=Kids" class="nav-link" data-filter-cat="Kids">Kids <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+                        <div class="mega-menu" role="menu">
+                            <div class="container mega-grid">
+                                <div class="mega-col">
+                                    <h4>Boys & Girls</h4>
+                                    <ul>
+                                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="T-Shirts">Kids T-Shirts</a></li>
+                                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="Dresses">Girls Dresses</a></li>
+                                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="Jeans">Kids Denim & Jeans</a></li>
+                                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="Shoes">Kids Sneakers & Shoes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Shop By Age</h4>
+                                    <ul>
+                                        <li><a href="#" data-filter-cat="Kids">2–5 Years (Toddlers)</a></li>
+                                        <li><a href="#" data-filter-cat="Kids">6–10 Years (Juniors)</a></li>
+                                        <li><a href="#" data-filter-cat="Kids">11–14 Years (Teens)</a></li>
+                                        <li><a href="#" data-filter-cat="Kids">All Kids Collection</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-promo">
+                                    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80" alt="Kids Playful Comfort Wear" loading="lazy">
+                                    <div class="mega-promo-caption">
+                                        <span class="badge-tag">100% COTTON</span>
+                                        <h5>Play-Ready Essentials</h5>
+                                        <button class="btn-link" data-filter-cat="Kids">Explore Kids →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="#catalog?category=Accessories" class="nav-link" data-filter-cat="Accessories">Accessories</a></li>
+                    <li class="nav-item"><a href="#catalog?sort=newest" class="nav-link" data-quick-filter="new">New Arrivals</a></li>
+                    <li class="nav-item"><a href="#catalog?discount=30" class="nav-link nav-offer" data-quick-filter="offers">Offers</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right: Search Bar & Action Icons -->
+            <div class="nav-right">
+                <div class="search-wrapper" id="desktopSearchWrapper">
+                    <form class="search-bar" id="searchForm" role="search">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search for T-Shirts, Dresses, Brands..." autocomplete="off" aria-label="Search products">
+                        <button type="button" class="clear-search-btn hidden" id="clearSearchBtn" aria-label="Clear search">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </form>
+                    <!-- Live Search Suggestions Dropdown -->
+                    <div class="search-suggestions hidden" id="searchSuggestions" role="listbox"></div>
+                </div>
+
+                <button class="icon-btn mobile-search-trigger" id="mobileSearchTrigger" aria-label="Toggle search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="action-icon-btn" id="navAccountBtn" data-route="account" aria-label="Account">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="action-label" id="navAccountLabel">Account</span>
+                </button>
+
+                <button class="action-icon-btn" id="navWishlistBtn" data-route="wishlist" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="action-label">Wishlist</span>
+                    <span class="count-badge" id="wishlistCount">0</span>
+                </button>
+
+                <button class="action-icon-btn" id="navCartBtn" data-route="cart" aria-label="Shopping Bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="action-label">Bag</span>
+                    <span class="count-badge accent" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Expandable Search Bar -->
+        <div class="mobile-search-bar hidden" id="mobileSearchBar">
+            <div class="container">
+                <form class="search-bar mobile-form" id="mobileSearchForm">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="mobileSearchInput" placeholder="Search FashionHub..." autocomplete="off">
+                    <button type="button" class="clear-search-btn hidden" id="mobileClearSearchBtn"><i class="fa-solid fa-xmark"></i></button>
+                </form>
+                <div class="search-suggestions hidden" id="mobileSearchSuggestions"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Side Drawer Navigation -->
+    <div class="drawer-backdrop hidden" id="mobileDrawerBackdrop"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <span class="brand-logo"><span class="logo-mark">FH</span> FASHIONHUB</span>
+            <button class="icon-btn" id="closeMobileDrawer" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-user-card" id="drawerUserCard">
+            <div class="avatar-circle"><i class="fa-regular fa-user"></i></div>
+            <div>
+                <p class="drawer-user-name" id="drawerUserName">Welcome, Guest</p>
+                <button class="btn-link" data-route="account" id="drawerAuthAction">Sign In / Register</button>
+            </div>
+        </div>
+        <div class="drawer-body">
+            <ul class="drawer-nav-list">
+                <li><a href="#home" data-route="home" class="drawer-link">Home</a></li>
+                
+                <li class="drawer-accordion">
+                    <button class="drawer-acc-btn" aria-expanded="false">Men <i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="drawer-sublist">
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Oversized T-Shirts">Oversized T-Shirts</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Polo T-Shirts">Polo T-Shirts</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Casual Shirts">Casual Shirts</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Formal Shirts">Formal Shirts</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Denim Jeans">Denim Jeans</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Cargo Pants">Cargo Pants</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Hoodies">Hoodies</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Jackets">Jackets</a></li>
+                        <li><a href="#" data-mega-cat="Men" data-mega-sub="Sneakers">Sneakers</a></li>
+                        <li><a href="#" data-filter-cat="Men" class="text-accent">Shop All Men</a></li>
+                    </ul>
+                </li>
+
+                <li class="drawer-accordion">
+                    <button class="drawer-acc-btn" aria-expanded="false">Women <i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="drawer-sublist">
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Tops">Tops</a></li>
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Dresses">Dresses</a></li>
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Kurtis">Kurtis</a></li>
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Jeans">Jeans</a></li>
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Ethnic Wear">Ethnic Wear</a></li>
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Handbags">Handbags</a></li>
+                        <li><a href="#" data-mega-cat="Women" data-mega-sub="Sneakers">Sneakers & Sandals</a></li>
+                        <li><a href="#" data-filter-cat="Women" class="text-accent">Shop All Women</a></li>
+                    </ul>
+                </li>
+
+                <li class="drawer-accordion">
+                    <button class="drawer-acc-btn" aria-expanded="false">Kids <i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="drawer-sublist">
+                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="T-Shirts">Boys & Girls T-Shirts</a></li>
+                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="Dresses">Girls Dresses</a></li>
+                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="Jeans">Kids Jeans</a></li>
+                        <li><a href="#" data-mega-cat="Kids" data-mega-sub="Shoes">Kids Shoes</a></li>
+                        <li><a href="#" data-filter-cat="Kids" class="text-accent">Shop All Kids</a></li>
+                    </ul>
+     

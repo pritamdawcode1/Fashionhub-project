@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /checkout
+Disallow: /account
+Sitemap: https://www.fashionhub-demo.example.com/sitemap.xml
