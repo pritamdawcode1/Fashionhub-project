@@ -466,4 +466,512 @@
             ]
         },
         {
+            id: 'FH-W008',
+            name: "Women's Strappy Block-Heel Evening Sandals",
+            category: 'Women',
+            subCategory: 'Sandals',
+            brand: 'H&M',
+            description: 'Minimalist square-toe block heel sandals with cushioned insole and adjustable ankle buckle.',
+            material: 'PU Leather Upper, Resin Sole',
+            care: 'Store in dust bag away from moisture.',
+            originalPrice: 1999,
+            discountedPrice: 1099,
+            discount: 45,
+            rating: 4.4,
+            reviews: 156,
+            sizes: ['XS', 'S', 'M', 'L'],
+            colors: ['Black', 'White', 'Red'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-W009',
+            name: "Women's Satin Pleated Slip Midi Skirt",
+            category: 'Women',
+            subCategory: 'Dresses',
+            brand: 'H&M',
+            description: 'Lustrous bias-cut satin midi skirt with concealed elastic waistband for fluid movement.',
+            material: '100% Recycled Polyester Satin',
+            care: 'Hand wash cold.',
+            originalPrice: 1899,
+            discountedPrice: 999,
+            discount: 47,
+            rating: 4.5,
+            reviews: 132,
+            sizes: ['XS', 'S', 'M', 'L'],
+            colors: ['Green', 'Black', 'White'],
+            inStock: true,
+            trending: false,
+            isNew: true,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-W010',
+            name: "Women's Oversized Poplin Button-Up Shirt",
+            category: 'Women',
+            subCategory: 'Tops',
+            brand: 'FashionHub',
+            description: 'Relaxed boyfriend-fit crisp cotton poplin shirt with dropped shoulders and single chest pocket.',
+            material: '100% Organic Cotton Poplin',
+            care: 'Machine wash cold. Medium iron.',
+            originalPrice: 1699,
+            discountedPrice: 899,
+            discount: 47,
+            rating: 4.6,
+            reviews: 204,
+            sizes: ['XS', 'S', 'M', 'L', 'XL'],
+            colors: ['White', 'Blue', 'Black'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-W011',
+            name: "Women's Quilted Crossbody Sling Bag",
+            category: 'Women',
+            subCategory: 'Handbags',
+            brand: 'Roadster',
+            description: 'Compact diamond-quilted sling bag with chain-link strap and magnetic flap lock.',
+            material: 'Faux Leather',
+            care: 'Wipe clean.',
+            originalPrice: 1499,
+            discountedPrice: 749,
+            discount: 50,
+            rating: 4.3,
+            reviews: 118,
+            sizes: ['S'],
+            colors: ['Red', 'Black'],
+            inStock: false,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+
+        // --- KIDS (5 Products) ---
+        {
+            id: 'FH-K001',
+            name: "Kids' Organic Cotton Graphic Print T-Shirt",
+            category: 'Kids',
+            subCategory: 'T-Shirts',
+            brand: 'FashionHub',
+            description: 'Super-soft tagless 100% organic cotton T-shirt built for active playground comfort.',
+            material: '100% GOTS Certified Organic Cotton',
+            care: 'Machine wash warm.',
+            originalPrice: 699,
+            discountedPrice: 399,
+            discount: 43,
+            rating: 4.7,
+            reviews: 192,
+            sizes: ['XS', 'S', 'M', 'L'],
+            colors: ['Blue', 'Red', 'White'],
+            inStock: true,
+            trending: false,
+            isNew: true,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-K002',
+            name: "Girls' Floral Cotton Tiered Party Dress",
+            category: 'Kids',
+            subCategory: 'Dresses',
+            brand: 'H&M',
+            description: 'Charming flutter-sleeve tiered cotton dress with soft lining and button-back closure.',
+            material: '100% Breathable Cotton Cambric',
+            care: 'Gentle machine wash.',
+            originalPrice: 1399,
+            discountedPrice: 799,
+            discount: 43,
+            rating: 4.8,
+            reviews: 165,
+            sizes: ['XS', 'S', 'M', 'L'],
+            colors: ['Red', 'White', 'Blue'],
+            inStock: true,
+            trending: false,
+            isNew: true,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-K003',
+            name: "Kids' Stretchable Elastic-Waist Denim Jeans",
+            category: 'Kids',
+            subCategory: 'Jeans',
+            brand: "Levi's",
+            description: 'Soft-touch flex denim jeans with adjustable inner waistband for growing kids.',
+            material: '82% Cotton, 16% Polyester, 2% Elastane',
+            care: 'Machine wash cold.',
+            originalPrice: 1499,
+            discountedPrice: 899,
+            discount: 40,
+            rating: 4.5,
+            reviews: 140,
+            sizes: ['XS', 'S', 'M', 'L'],
+            colors: ['Blue', 'Black'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-K004',
+            name: "Kids' Velcro-Strap Lightweight Running Shoes",
+            category: 'Kids',
+            subCategory: 'Shoes',
+            brand: 'Adidas',
+            description: 'Easy hook-and-loop strap sneakers with cushioned EVA sole and breathable knit upper.',
+            material: 'Breathable Mesh & Non-Marking Rubber Sole',
+            care: 'Wipe clean with damp sponge.',
+            originalPrice: 2199,
+            discountedPrice: 1299,
+            discount: 41,
+            rating: 4.7,
+            reviews: 211,
+            sizes: ['XS', 'S', 'M'],
+            colors: ['Blue', 'Black', 'Red'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-K005',
+            name: "Kids' Colorblock Fleece Zip Hoodie",
+            category: 'Kids',
+            subCategory: 'T-Shirts',
+            brand: 'Puma',
+            description: 'Cozy full-zip hoodie with soft brushed interior and ribbed cuffs for cool mornings.',
+            material: '80% Cotton, 20% Polyester',
+            care: 'Machine wash cold.',
+            originalPrice: 1599,
+            discountedPrice: 949,
+            discount: 41,
+            rating: 4.6,
+            reviews: 88,
+            sizes: ['XS', 'S', 'M', 'L'],
+            colors: ['Green', 'Grey', 'Blue'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+
+        // --- ACCESSORIES (5 Products) ---
+        {
+            id: 'FH-A001',
+            name: "ChronoMinimalist Stainless Steel Analog Watch",
+            category: 'Accessories',
+            subCategory: 'Watches',
+            brand: 'FashionHub',
+            description: 'Ultra-thin 40mm brushed stainless steel timepiece with Japanese quartz movement and sapphire-coated mineral glass.',
+            material: '316L Stainless Steel & Genuine Leather Strap',
+            care: 'Water resistant up to 5 ATM. Wipe with microfiber cloth.',
+            originalPrice: 5499,
+            discountedPrice: 2749,
+            discount: 50,
+            rating: 4.8,
+            reviews: 356,
+            sizes: ['M'],
+            colors: ['Black', 'Grey'],
+            inStock: true,
+            trending: false,
+            isNew: true,
+            bestseller: true,
+            images: [
+                'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-A002',
+            name: "Polarized Aviator UV400 Sunglasses",
+            category: 'Accessories',
+            subCategory: 'Sunglasses',
+            brand: 'Roadster',
+            description: 'Classic lightweight metal-frame aviators with anti-glare polarized lenses and 100% UV400 protection.',
+            material: 'Titanium Alloy Frame, TAC Polarized Lenses',
+            care: 'Clean with included lens cloth and hard case.',
+            originalPrice: 1799,
+            discountedPrice: 899,
+            discount: 50,
+            rating: 4.5,
+            reviews: 267,
+            sizes: ['M'],
+            colors: ['Black', 'Blue'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-A003',
+            name: "UrbanCommute Water-Resistant Laptop Backpack",
+            category: 'Accessories',
+            subCategory: 'Bags',
+            brand: 'Nike',
+            description: '24L sleek commuter backpack with padded 16-inch laptop sleeve, hidden anti-theft pocket, and ergonomic straps.',
+            material: '900D Ballistic Water-Resistant Polyester',
+            care: 'Spot clean only.',
+            originalPrice: 3299,
+            discountedPrice: 1899,
+            discount: 42,
+            rating: 4.7,
+            reviews: 318,
+            sizes: ['M'],
+            colors: ['Black', 'Grey'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-A004',
+            name: "Reversible Full-Grain Leather Formal Belt",
+            category: 'Accessories',
+            subCategory: 'Belts',
+            brand: "Levi's",
+            description: 'Two-in-one black and dark espresso reversible leather belt with rotating brushed gunmetal buckle.',
+            material: '100% Full-Grain Buff Leather',
+            care: 'Condition periodically with leather balm.',
+            originalPrice: 1499,
+            discountedPrice: 799,
+            discount: 47,
+            rating: 4.6,
+            reviews: 195,
+            sizes: ['S', 'M', 'L', 'XL'],
+            colors: ['Black'],
+            inStock: true,
+            trending: false,
+            isNew: false,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80'
+            ]
+        },
+        {
+            id: 'FH-A005',
+            name: "SignatureHeritage Chronograph Mesh Watch",
+            category: 'Accessories',
+            subCategory: 'Watches',
+            brand: 'FashionHub',
+            description: 'Statement sunray dial watch paired with a breathable Milanese stainless steel mesh strap.',
+            material: 'Stainless Steel',
+            care: 'Wipe with dry cloth.',
+            originalPrice: 6499,
+            discountedPrice: 3499,
+            discount: 46,
+            rating: 4.9,
+            reviews: 142,
+            sizes: ['M'],
+            colors: ['Black', 'Blue'],
+            inStock: true,
+            trending: false,
+            isNew: true,
+            bestseller: false,
+            images: [
+                'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80'
+            ]
+        }
+    ];
+
+    // ======================================================================
+    // 2. PERSISTENT STATE MANAGEMENT (LOCALSTORAGE)
+    // ======================================================================
+    const STORAGE_KEYS = {
+        CART: 'fh_cart_v1',
+        WISHLIST: 'fh_wishlist_v1',
+        USER: 'fh_user_v1',
+        ORDERS: 'fh_orders_v1',
+        ADDRESSES: 'fh_addresses_v1'
+    };
+
+    const state = {
+        cart: loadStorage(STORAGE_KEYS.CART, []),
+        wishlist: loadStorage(STORAGE_KEYS.WISHLIST, []),
+        user: loadStorage(STORAGE_KEYS.USER, null),
+        orders: loadStorage(STORAGE_KEYS.ORDERS, []),
+        addresses: loadStorage(STORAGE_KEYS.ADDRESSES, []),
+        currentView: 'home',
+        selectedProductId: null,
+        pdpSelectedSize: null,
+        pdpSelectedColor: null,
+        pdpQuantity: 1,
+        filters: {
+            search: '',
+            categories: [],
+            subCategory: '',
+            pricePreset: 'all',
+            maxPrice: 7000,
+            brands: [],
+            minRating: 0,
+            minDiscount: 0,
+            sizes: [],
+            colors: [],
+            stock: 'all',
+            quickTag: '' // 'new', 'offers', 'bestsellers'
+        },
+        sortBy: 'recommended'
+    };
+
+    function loadStorage(key, fallback) {
+        try {
+            const raw = localStorage.getItem(key);
+            return raw ? JSON.parse(raw) : fallback;
+        } catch (err) {
+            console.warn('Storage read error:', err);
+            return fallback;
+        }
+    }
+
+    function saveStorage(key, value) {
+        try {
+            localStorage.setItem(key, JSON.stringify(value));
+        } catch (err) {
+            console.warn('Storage write error:', err);
+        }
+    }
+
+    // Format Indian Rupee cleanly
+    function formatINR(amount) {
+        return '₹' + Number(amount).toLocaleString('en-IN');
+    }
+
+    // Toast Notification Utility
+    function showToast(message, type = 'success') {
+        const container = document.getElementById('toastContainer');
+        if (!container) return;
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        const icon = type === 'error' ? 'fa-circle-exclamation' : 'fa-circle-check';
+        toast.innerHTML = `<i class="fa-solid ${icon}"></i><span>${message}</span>`;
+        container.appendChild(toast);
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateY(10px)';
+            setTimeout(() => toast.remove(), 250);
+        }, 3000);
+    }
+
+    // ======================================================================
+    // 3. VIEW ROUTER & NAVIGATION
+    // ======================================================================
+    function navigateTo(viewName, options = {}) {
+        state.currentView = viewName;
+        document.querySelectorAll('.app-view').forEach(v => v.classList.add('hidden'));
+
+        const targetView = document.getElementById(`view-${viewName}`);
+        if (targetView) {
+            targetView.classList.remove('hidden');
+        }
+
+        // Update active nav link highlight
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.toggle('active', link.dataset.route === viewName);
+        });
+
+        // Close mobile drawers & search suggestions
+        closeMobileDrawer();
+        closeMobileFilter();
+        hideSearchSuggestions();
+
+        if (viewName === 'home') {
+            document.title = 'FashionHub | Style That Defines You — Premium Fashion Store';
+            renderHomeSections();
+        } else if (viewName === 'catalog') {
+            document.title = 'Shop Collections | FashionHub';
+            syncFilterInputsFromState();
+            renderCatalog();
+        } else if (viewName === 'product' && options.productId) {
+            renderProductDetails(options.productId);
+        } else if (viewName === 'cart') {
+            document.title = 'Shopping Bag | FashionHub';
+            renderCart();
+        } else if (viewName === 'wishlist') {
+            document.title = 'My Wishlist | FashionHub';
+            renderWishlist();
+        } else if (viewName === 'checkout') {
+            if (state.cart.length === 0) {
+                showToast('Your shopping bag is empty!', 'error');
+                navigateTo('catalog');
+                return;
+            }
+            document.title = 'Secure Checkout | FashionHub';
+            renderCheckout();
+        } else if (viewName === 'account') {
+            document.title = 'My Account | FashionHub';
+            renderAccountView(options.tab || 'orders');
+        } else if (viewName === 'orders') {
+            // Route orders directly into Account Dashboard -> My Orders tab
+            navigateTo('account', { tab: 'orders' });
+            return;
+        }
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ======================================================================
+    // 4. PRODUCT CARD GENERATOR & HOMEPAGE RENDERING
+    // ======================================================================
+    function createProductCardHTML(product) {
+        const isWishlisted = state.wishlist.includes(product.id);
+        const primaryImg = product.images[0] || FALLBACK_IMAGE;
+
+        return `
+            <article class="product-card" data-product-id="${product.id}">
+                <div class="product-thumb" data-open-product="${product.id}">
+                    <div class="card-badges">
+                        <span class="discount-badge">${product.discount}% OFF</span>
+                        ${!product.inStock ? '<span class="stock-out-badge">OUT OF STOCK</span>' : ''}
+                    </div>
+                    <button type="button" class="wishlist-heart-btn ${isWishlisted ? 'active' : ''}" data-toggle-wishlist="${product.id}" aria-label="Save to wishlist">
+                        <i class="${isWishlisted ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
+                    </button>
+                    <img src="${primaryImg}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}';">
+                    <div class="rating-pill">
+                        <span>${product.rating.toFixed(1)}</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(${product.reviews})</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">${product.brand}</span>
+                    <h3 class="product-title" data-open-product="${product.id}">${product.name}</h3>
+                    <div class="product-price-row">
+                        <span class="price-current">${formatINR(product.discountedPrice)}</span>
+                        <span class="price-original">${formatINR(product.originalPrice)}</span>
+                        <span class="price-off">(${product.discount}% OF
    
